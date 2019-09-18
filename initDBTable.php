@@ -11,10 +11,10 @@ try{
 	$db = new PDO($conn_string, $username, $password);
 		echo "Connected";
 			//create table
-				$query = "create table if not exists
-				`TestUsers`(
-						`id` int auto_increment not
-						null,
+			$query = "create table if not exists
+			`TestUsers`(
+				`id` int auto_increment not
+				null,
 								`username`
 								varchar(30) not
 								null unique,
