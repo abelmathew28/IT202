@@ -33,6 +33,7 @@
         echo "<br>" . " The concatenated string of ".$number1_val . " and
         ".$number2_val." is ".$concat_number;
 
+	//Adding just a comment
 
         //TODO
 	//handle addition of 2 or more parameters with proper number parsing
