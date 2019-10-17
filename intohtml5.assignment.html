@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	function queryParam(){
+		var params = new URLSearchParams(location.search);
+		if(params.has('page')){
+			var page = params.get('page');
+			var ele = document.getElementById(page);
+			if(ele){
+				let home = document.getElementById('home');
+				let about = document.getElementById('about');
+				home.style.display="none";
+				about.style.display = "none";
+				ele.style.display = "block";
+			}
+		}
+		else{
+			let home = document.getElementById('home');
+			let about = document.getElementById('about');
+			home.style.display = "block";
+			about.style.display = "none";
+		}
+	}
+</script>
+</head>
+<body onload="queryParam();">
+	<header>
+		<nav>
+			<a href="?page=home">Home</a> | 
+			<a href="?page=about">About Us</a> |
+		</nav>
+	</header>
+	<div id="home">
+		<h1>This is my home page</h1>
+		<p> <h2>This page is under construction </h2></p>
+	</div>
+	<div id="about">
+	
+		<section>
+		<article>
+		<h1>About Us</h1>
+		<p>This is about us page sample <details>
+				<summary>click here for details us</summary>
+				<p>  mission is to stop the degradation of our planet's natural environment, and build a future in which humans live in harmony with nature..</p>
+		</details></p>
+		<p>We open at <time>10:00</time> every morning.</p>
+		</article>
+		</section>
+		<section>
+		<h2>Our Products</h2>
+		<ul>
+			<li>Bike</li>
+			<li>Scooter</li>
+		</ul>
+	
+	</section>
+
+	</div>
+	<footer>
+			<p>Copyright 1999-2018. </p>
+	</footer>
+</body>
+</html>
+
