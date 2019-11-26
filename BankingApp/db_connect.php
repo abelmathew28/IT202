@@ -1,9 +1,9 @@
 <?php 
 
-$localhost = "sql1.njit.edu";
-$username = "ab2323";
-$password = "r0IgvuRjH";
-$dbname = "ab2323";
+$localhost = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "Banking_app";
 
 // create connection
 $connect = new mysqli($localhost, $username, $password, $dbname);
@@ -16,4 +16,3 @@ if($connect->connect_error) {
 }
 
 ?>
-
