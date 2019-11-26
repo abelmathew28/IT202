@@ -1,0 +1,98 @@
+body {
+       padding-top: 60px;
+       padding-bottom: 40px;
+       margin: 0px;
+   }
+
+   .container {
+       width: 80%;
+       margin: 0 auto;
+       /* Center the DIV horizontally */
+   }
+
+   .fixed-header,
+   .fixed-footer {
+       width: 100%;
+       position: fixed;
+       background: #c00;
+       padding: 10px 0;
+       color: #fff;
+       text-align: center;
+   }
+
+   .fixed-header {
+       top: 0;
+   }
+
+   .fixed-footer {
+       bottom: 0;
+   }
+
+   /* Some more styles to beutify this example */
+   nav a,
+   nav a:hover {
+       color: #fff;
+       text-decoration: none;
+       padding: 7px 25px;
+       display: inline-block;
+   }
+
+   nav a:hover {
+       font-weight: bold;
+   }
+
+   .container p {
+       line-height: 200px;
+       /* Create scrollbar to test positioning */
+   }
+
+   .right {
+       color: #fff;
+       text-decoration: none;
+       padding: 7px 25px;
+       display: inline-block;
+       display: inline;
+       text-align: right;
+       float: right;
+
+   }
+
+   .left {
+       font-size: 20px;
+       color: #fff;
+       text-decoration: none;
+       padding: 7px 25px;
+       display: inline-block;
+       display: inline;
+       text-align: left;
+       float: left;
+   }
+
+
+   .dropdown {
+       position: relative;
+       display: inline-block;
+       padding: 10px !important;
+   }
+
+   .dropdowntitle {
+       padding: 7px 1px !important;
+   }
+
+   .dropdown-content {
+       display: none;
+       position: absolute;
+       background-color: #c00;
+       min-width: 160px;
+       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+       padding: 12px 16px;
+       z-index: 1;
+   }
+
+   .dropdown-content a {
+       color: #fff;
+   }
+
+   .dropdown:hover .dropdown-content {
+       display: block;
+   }
