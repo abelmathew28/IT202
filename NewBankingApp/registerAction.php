@@ -37,8 +37,8 @@ if($_POST) {
 		$accresult = $connect->query($account_number);
 		$data = $accresult->fetch_assoc();
 
-			if(empty($data)) {
-				$bank_account_number="900000000101";
+			if(empty($data) || $data['account_number']=="00000000000") {
+			 	$bank_account_number="900000000101";
 			} else {
 					$curaccno = $data['account_number'];
 				$bank_account_number= $curaccno + 1;
@@ -56,7 +56,7 @@ if($_POST) {
 			}
 
 
-		echo "<h3>Hi  $fname  Your  Successfully Created your Account</h3>";
+		echo "<h3>Hi  $fname, you have  successfully created your Account</h3>";
 		echo "<p>Your Account Number is : $bank_account_number</p>";
 		echo "<a href='index.php'>Click here to  Login </a>";	
 	} else {
